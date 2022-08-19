@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDHU-tribute</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- <h>Hello</h> -->
+
+    <!-- 1.navigation bar -->
+    <div class="superbox">
+    <div class="respnav">
+        <img class="brand_logo" src="logo.png" alt="Spotify">
+        <span class="brand_name">SIDHU</span>
+        <input type="text" autofocus disabled>
+    </div>
+
+    <div class="up">
+    <nav>
+        <ul>
+
+
+            <li class="brand">
+                <img class="brand_logo" src="logo.png" alt="Spotify">
+                <span class="brand_name">SIDHU</span>
+                
+            </li>
+
+
+            <li class="home">
+                <i class="fa-solid fa-house-chimney-user"></i>
+                <span>Home</span>
+            </li>
+
+            <div class="search">
+
+                
+                    <input type="text" autofocus disabled>
+                
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </li>
+
+            </div>
+
+            <li class="liked">
+                <i class="fa-solid fa-heart"></i>
+                <span>Liked</span>
+            </li>
+
+            <li class="dark">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-keyboard-brightness"></i>
+                <span>Dark</span>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- 2.container -->
+    <div class="container">
+        <h1>
+            Best of NCS- No Copyright Sounds
+        </h1>
+        <div class="song_list">
+            <div class="songItem" id="1">
+                <img id="1" alt="1" class="src">
+                <span id="1" class="songName">So High</span>
+
+                <!--  <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="0" class="fa-solid btn fa-play"></i> -->
+                <!-- </span>  -->
+            </div>
+
+            <div class="songItem" id="2">
+                <img alt="2" id="2" class="src">
+                <span id="2" class="songName">The Last Ride</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="1" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="3">
+                <img id="3" alt="3" class="src" id="3">
+                <span id="3" class="songName">Same Beef</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="2" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="4">
+                <img id="4" alt="4" class="src">
+                <span id="4" class="songName">Goat</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="3" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="5">
+                <img id="5" alt="5" class="src">
+                <span id="5" class="songName">295</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="4" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="6">
+                <img id="6" alt="6" class="src">
+                <span id="6" class="songName">Dollar</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="5" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="7">
+                <img id="7" alt="7" class="src">
+                <span id="7" class="songName">Legend</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="6" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+            <div class="songItem" id="8">
+                <img id="8" alt="1" class="src">
+                <span id="8" class="songName">Levels</span>
+                <!-- <span class="songplay"> -->
+                <!-- <span>05:34</span> -->
+                <!-- <i id="7" class="fa-solid btn fa-play"></i> -->
+                <!-- </span> -->
+            </div>
+
+
+        </div>
+
+
+       
+    </div>
+
+</div>
+</div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" initial="0" min="0" max="100">
+
+        <!-- fontawesome icons -->
+        <div class="icon">
+            <div class="first">
+                <img id="gif" src="playing.gif"   height="1.5rem" 
+                width="5rem" alt="gif">
+                <span id="bottomSongName">So High</span>
+            </div>
+           <div class="second">
+            <i class="fa-solid fa-backward" id="pre"></i>
+            <i class="fa-solid fa-play" id="playButton"></i>
+            <!-- <i class="fa-solid fa-pause"></i> -->
+            <i class="fa-solid fa-forward" id="next"></i>
+           </div>
+           
+            <div class="sound">
+                <i class="fa-solid fa-volume-low" id="snd"></i>
+                <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+                <input type="range" name="range" id="sndProgressBar" initial="0" min="0" max="100">
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+
+</html>
