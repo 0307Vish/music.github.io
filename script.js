@@ -10,7 +10,7 @@ let playButton = document.getElementById('playButton')
 let songItems = Array.from(document.getElementsByClassName('songItem'))
 let bottomSongName = document.getElementById
 ('bottomSongName')
-let snd = document.getElementById('snd')
+// let snd = document.getElementById('snd')
 let sndBar=document.getElementById('sndProgressBar')
 let vol= audioElement.volume =parseFloat((sndBar.value / 100));
 // let btn= Array.from(document.getElementsByClassName('btn'))
@@ -48,6 +48,7 @@ songItems.forEach((element, i) => {
         playButton.classList.remove("fa-play");
         playButton.classList.add('fa-pause');
         gif.style.opacity = 1;
+        bottomSongName.innerText = songs[songIndex-1].songName
     })
     
 })
@@ -224,14 +225,8 @@ snd.addEventListener('click',()=>{
       
     })
 
-    snd.addEventListener('mouseover',()=>{
-        document.getElementById('sndProgressBar').style.opacity=1;
-
- })
-    // snd.addEventListener('mouseout',()=>{
-    //     document.getElementById('sndProgressBar').style.opacity=0;
-
-//  })
+    
+  
 
 
 sndBar.addEventListener('change', () => {
