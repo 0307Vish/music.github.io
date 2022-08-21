@@ -18,14 +18,15 @@ body {
     flex-direction: column;
     gap: 1rem;
 }
-nav ul {
+/* nav ul  */
+     nav {
     list-style-type: none;
     display: flex;
     height:4rem;
     justify-content: space-around;
-    gap: 2.5rem;
+    /* gap: 2.5rem; */
     align-items: center;
- background-color:rgb(1, 22, 7);
+    background-color:rgb(1, 22, 7);
     font-size: 1.3rem;
     color: azure;
 }
@@ -235,10 +236,11 @@ i:hover{
 @media screen and (max-width:705px){
     body{
         /* background-color: rgb(198, 24, 24); */
-         display:flex;
+        display:flex;
         flex-direction: column;
     }
-        nav ul {
+        /* nav ul*/
+        nav { 
            
             display: flex;
             flex-direction: column;
@@ -246,11 +248,11 @@ i:hover{
             width: 15vw;
             border-radius: 6rem;
             margin-left: 0.3rem;
+           
             
         }
         .up{
-            display:flex;
-            align-items: center;
+            display:flex;        
         }
 
 
@@ -278,16 +280,17 @@ i:hover{
         display: none;
 
     }
-      nav ul {
-        height: 45vh;
+      /* nav ul */
+     nav { 
+        height: 68vh;
         width: 10vw;
-        /* margin:5rem 0rem 5rem 0.3rem; */
+        position: fixed;
       }
       .respnav{
         display: flex;
         border-radius: 6rem;
-       top: 0;
-       margin: 0.5rem;
+        top: 0;
+        margin: 0.5rem;
         position: sticky;
        
       }  
@@ -307,12 +310,16 @@ i:hover{
 @media screen and (max-width:440px){
     .songItem{  
         width: 60vw;        
-        /* width: 14rem;   */
+
     }
     .container{
         height: 90vh;
     }
-    
+    nav{
+        height: 48vh;
+       /* top: ; */
+
+    }
 }
 
 
