@@ -178,7 +178,7 @@ nav {
 }
 
 #gif {
-    height: 1.5rem;
+    /* height: 1.5rem; */
     width: 5rem;
     background-color: rgb(1, 22, 7);
     opacity: 0;
